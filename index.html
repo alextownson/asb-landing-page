@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Another Story Bookshop is an independent bookshop committed to equality & diversity featuring a wide selection for kids & adults.">
+    <title>Another Story</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qev1ika.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://anotherstory.ca/i/1157949/landing-page/ASB_Favicon_Landing_Page.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+        }
+        header {
+            width: 100vw;
+            height: 80px;
+            background-color: #ededed;
+            padding: 0 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-family: "miller-text", serif;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 2px;
+            color: black;
+            text-align: center;
+            line-height: 1.25em;
+        }
+        h2 {
+            padding-top: 20px;
+            font-family: "Avenir", sans-serif;
+            font-weight: 500;
+            font-size: 14pt;
+            letter-spacing: 0.5px;
+        }
+        p {
+            font-family: "Avenir", sans-serif;
+        }
+        a {
+            color: #222;
+        }
+        #button-container {
+            min-height: calc(100vh - 249px);
+            padding: 40px 20px;
+            width: 100vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12vw;
+            text-align: center;
+        }
+        .store-buttons {
+            background-color: #6b809aaf;
+            cursor: pointer;
+            border: #222 solid 2px;
+            border-radius: 25px;
+            width: 25vw;
+            max-width: 700px;
+            min-width: 225px;
+            transition: 0.7s;
+            overflow: hidden;
+        }
+        .store-buttons:hover {
+            background-color: #6B809A;
+        }
+        .store-buttons img {
+            margin-top: -10px;
+            width: 75%;
+        }
+        footer {
+            min-height: 169px;
+            width: 100vw;
+            background-color: #ededed;
+            padding: 50px 5vw;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            gap: 2vw;
+        }
+        .social-buttons {
+            margin: 10px;
+            text-decoration: none;
+        }
+        .social-buttons img {
+            width: 40px;
+            cursor: pointer;
+        }
+        footer div {
+            line-height: 23px;
+            width: 250px;
+        }
+        @media only screen and (max-width: 874px) {
+            footer {
+                justify-content: center;
+                gap: 50px;
+            }
+        }
+        @media only screen and (max-width: 665px) {
+            #button-container {
+                padding: 60px 0;
+                flex-flow: column nowrap;
+                gap: 5vh;
+            }
+            .store-buttons {
+                min-width: 250px;
+            }
+            h2 {
+                font-size: 12pt;
+            }
+            footer {
+                flex-flow: column nowrap;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            #button-container {
+                padding: 40px 0;
+            }
+            .store-buttons {
+                min-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANOTHER STORY</h1>
+    </header>
+    <main>
+        <div id="button-container">
+            <div>
+                <a href="https://anotherstory.ca/?q=h"><div class="store-buttons"><img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_Black_Outline_300px.png" alt="another story bookshop logo"></div></a>
+                <h2>RETAIL WEBSITE</h2>
+            </div>
+            <div>
+                <a href="https://anotherstoryedu.ca"><div class="store-buttons"><img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Black_Text_300px.png" alt="another story education logo"></div></a>
+                <h2>EDUCATION WEBSITE</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Another Story Bookshop
+                <br>
+                315 Roncesvalles Ave.
+                <br>
+                Toronto, ON M6R 2M6
+            </p>
+        </div>
+        <div>
+            <p>
+                Phone: (416) 462-1104
+                <br>
+                Fax: (416) 462-9115
+                <br>
+                Email: <a href="mailto: books@anotherstory.ca">books@anotherstory.ca</a>
+            </p>
+        </div>
+        <div>
+            <a class="social-buttons" href="https://www.facebook.com/anotherstorybookshop/" target="_blank">
+                <img src="https://anotherstory.ca/i/1157949/landing-page/f_logo_RGB_Black_100.png" alt="facebook">
+            </a>
+            <a class="social-buttons" href="https://www.instagram.com/anotherstorybookshop" target="_blank">
+                <img src="https://anotherstory.ca/i/1157949/landing-page/Instagram_Glyph_Black.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

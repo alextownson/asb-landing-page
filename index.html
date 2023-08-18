@@ -15,7 +15,7 @@
             box-sizing: border-box;
         }
         body {
-            background-color: white;
+            background-color: #6b809aaf
         }
         header {
             width: 100vw;
@@ -37,7 +37,7 @@
             line-height: 1.25em;
         }
         h2 {
-            padding-top: 20px;
+            padding: 10px;
             font-family: "Avenir", sans-serif;
             font-weight: 500;
             font-size: 14pt;
@@ -48,6 +48,7 @@
         }
         a {
             color: #222;
+            text-decoration: none;
         }
         #button-container {
             min-height: calc(100vh - 249px);
@@ -60,21 +61,25 @@
             gap: 12vw;
             text-align: center;
         }
+        figure {
+            width: 25vw;
+        }
         .store-buttons {
             background-color: #6b809aaf;
             cursor: pointer;
             border: #222 solid 2px;
-            border-radius: 25px;
+            border-radius: 10px;
             width: 25vw;
             max-width: 700px;
             min-width: 225px;
             transition: 0.7s;
             overflow: hidden;
+            text-decoration: none;
         }
         .store-buttons:hover {
             background-color: #6B809A;
         }
-        .store-buttons img {
+        figure img {
             margin-top: -10px;
             width: 75%;
         }
@@ -140,14 +145,14 @@
     </header>
     <main>
         <div id="button-container">
-            <div>
-                <a href="https://anotherstory.ca/?q=h"><div class="store-buttons"><img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_Black_Outline_300px.png" alt="another story bookshop logo"></div></a>
-                <h2>RETAIL WEBSITE</h2>
-            </div>
-            <div>
-                <a href="https://anotherstoryedu.ca"><div class="store-buttons"><img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Black_Text_300px.png" alt="another story education logo"></div></a>
-                <h2>EDUCATION WEBSITE</h2>
-            </div>
+            <figure>
+                <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_Black_Outline_300px.png" alt="another story bookshop logo">
+                <a href="https://anotherstory.ca/?q=h"><figcaption class="store-buttons"><h2>RETAIL WEBSITE</h2></figcaption></a>
+            </figure>
+            <figure>
+                <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Black_Text_300px.png" alt="another story education logo">
+                <a href="https://anotherstoryedu.ca"><figcaption class="store-buttons"><h2>EDUCATION WEBSITE</h2></figcaption></a>
+            </figure>
         </div>
     </main>
     <footer>
@@ -166,7 +171,7 @@
                 <br>
                 Fax: (416) 462-9115
                 <br>
-                Email: <a href="mailto: books@anotherstory.ca">books@anotherstory.ca</a>
+                Email: <a style="text-decoration: underline;" href="mailto: books@anotherstory.ca">books@anotherstory.ca</a>
             </p>
         </div>
         <div>

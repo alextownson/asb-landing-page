@@ -50,6 +50,13 @@
         header img {
             align-self: center;
         }
+        #bookshop-header {
+            height: 40px;
+        }
+        #education-header {
+            margin-top: 10px;
+            height: 50px;
+        }
         h1 {
             font-family: "Miller";
             font-weight: 700;
@@ -76,7 +83,6 @@
             text-align: center;
         }
         .store-buttons {
-            background-color: #6B809A;
             cursor: pointer;
             border: black solid 2px;
             border-radius: 10px;
@@ -127,7 +133,7 @@
             background-color: #009245;
             padding: 20px 5vw;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             align-items: center;
             justify-content: space-between;
             text-align: center;
@@ -137,10 +143,16 @@
             line-height: 23px;
             width: 200px;
         }
-        #email-link {
+        .email-link {
             color: white;
             text-decoration: underline;
-            transition: 0.7s;
+            transition: 0.5s;
+        }
+        #books-email:hover {
+            color: #CC5A52;
+        }
+        #education-email:hover {
+            color: #9A87CC;
         }
         .social-buttons {
             margin: 10px;
@@ -159,8 +171,11 @@
             header {
                 height: 100px;
             }
-            header img {
+            #bookshop-header {
                 height: 60px;
+            }
+            #education-header {
+                height: 70px;
             }
             h1 {
                 font-size: 28pt;
@@ -179,36 +194,46 @@
             }
             footer div {
                 line-height: 25px;
-                width: 210px
+                width: 230px
+            }
+            .social-buttons img {
+                width: 60px;
             }
         }
-        @media only screen and (max-width: 728px) {
-            h1 span {
-                display: none;
+        @media only screen and (max-width: 955px) {
+            footer {
+                justify-content: center;
+                gap: 30px;
             }
+        }
+        @media only screen and (orientation: portrait) {
             #button-container {
-                padding: 60px 0;
+                padding: 60px 20px;
                 flex-flow: column nowrap;
                 gap: 5vh;
+            }
+            .store-buttons {
+                width: 40vw;
             }
             h2 {
                 padding: 10px 10px;
                 font-size: 14pt;
             }
-            footer {
-                flex-flow: column nowrap;
-                gap: 30px;
-            }
         }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 700px) {
+            h1 span {
+                display: none;
+            }
+            .store-buttons {
+                width: 75vw;
+            }
             #button-container {
                 padding: 40px 20px;
             }
         }
         @media only screen and (max-width: 390px) {
             h1 {
-                font-size: 16pt;
-                line-height: 0.8em;
+                font-size: 14pt;
             }
             h2 {
                 font-size: 12pt;
@@ -221,21 +246,21 @@
 </head>
 <body>
     <header>
-        <img height="40px" src="https://cdn1.bookmanager.com/i/1157949/logo_navbar.png" alt="Another Story Bookshop logo" />
+        <img height="" width="auto" id="bookshop-header" src="https://cdn1.bookmanager.com/i/1157949/logo_navbar.png" alt="Another Story Bookshop logo" />
         <h1><span>Another Story</span> Website Selector</h1>
-        <img height="40px" src="https://anotherstory.ca/i/1157949/landing-page/ASE_Navbar.png" alt="Another Story Education logo" />
+        <img height="" width="auto" id="education-header" src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Header.png" alt="Another Story Education logo" />
     </header>
     <main>
         <div id="button-container">
             <a href="https://anotherstory.ca/?q=h" id="bookshop-link">
                 <figure class="store-buttons" id="bookshop-button">
-                    <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_White_Outline.svg" alt="another story bookshop logo">
+                    <img height="" width="" src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_White_Outline.svg" alt="another story bookshop logo">
                     <figcaption><h2>Looking for your next read?<br>Shop our retail website.</h2></figcaption>
                 </figure>
             </a>
             <a href="https://anotherstoryedu.ca" id="education-link">
                 <figure class="store-buttons" id="education-button">
-                    <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Black_Text.svg" alt="another story education logo">
+                    <img height="" width="" src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_Black_Text.svg" alt="another story education logo">
                     <figcaption><h2>Buying for a school?<br>Shop our education website.</h2></figcaption>
                 </figure>
             </a>
@@ -257,15 +282,24 @@
                 <br>
                 Fax: (416) 462-9115
                 <br>
-                <a id="email-link" href="mailto: books@anotherstory.ca">books@anotherstory.ca</a>
+                <a class="email-link" id="books-email" href="mailto: books@anotherstory.ca">books@anotherstory.ca</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                Another Story Education
+                <br>
+                Phone: (647) 829-0104
+                <br>
+                <a class="email-link" id="education-email" href="mailto: education@anotherstory.ca">education@anotherstory.ca</a>
             </p>
         </div>
         <div>
             <a class="social-buttons" href="https://www.facebook.com/anotherstorybookshop/" target="_blank">
-                <img src="https://anotherstory.ca/i/1157949/landing-page/f_logo_RGB_Black_100.png" alt="facebook">
+                <img height="" width=""  src="https://anotherstory.ca/i/1157949/landing-page/f_logo_RGB_White_100.png" alt="facebook">
             </a>
             <a class="social-buttons" href="https://www.instagram.com/anotherstorybookshop" target="_blank">
-                <img src="https://anotherstory.ca/i/1157949/landing-page/Instagram_Glyph_Black.svg" alt="instagram">
+                <img height="" width=""  src="https://anotherstory.ca/i/1157949/landing-page/Instagram_Glyph_White.svg" alt="instagram">
             </a>
         </div>
     </footer>

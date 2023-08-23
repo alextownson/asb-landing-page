@@ -45,14 +45,15 @@
             background-color: #009245;
             padding: 0 5vw;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: auto 1fr auto;
         }
         header img {
             align-self: center;
         }
         h1 {
-            font-weight: 300;
-            font-size: 16pt;
+            font-family: "Miller";
+            font-weight: 700;
+            font-size: 18pt;
             color: white;
             text-align: center;
             justify-self: center;
@@ -161,10 +162,6 @@
             }
             h1 {
                 font-size: 28pt;
-                line-height: 0.8em;
-            }
-            span {
-                font-size: 20pt;
             }
             #button-container {
                 min-height: calc(100vh - 280px);
@@ -184,6 +181,9 @@
             }
         }
         @media only screen and (max-width: 728px) {
+            h1 span {
+                display: none;
+            }
             #button-container {
                 padding: 60px 0;
                 flex-flow: column nowrap;
@@ -203,13 +203,10 @@
                 padding: 40px 20px;
             }
         }
-        @media only screen and (max-width: 345px) {
+        @media only screen and (max-width: 390px) {
             h1 {
-                font-size: 26pt;
-                line-height: 0.8em;
-            }
-            span {
                 font-size: 16pt;
+                line-height: 0.8em;
             }
             h2 {
                 font-size: 12pt;
@@ -223,7 +220,7 @@
 <body>
     <header>
         <img height="40px" src="https://cdn1.bookmanager.com/i/1157949/logo_navbar.png" alt="Another Story Bookshop logo" />
-        <h1>Another Story Website Selector</h1>
+        <h1><span>Another Story</span> Website Selector</h1>
     </header>
     <main>
         <div id="button-container">

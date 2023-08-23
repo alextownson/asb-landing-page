@@ -34,9 +34,6 @@
             color: black;
             text-decoration: none;
         }
-        a:hover {
-            color:#3D6999;
-        }
 
         /*
             HEADER
@@ -88,8 +85,23 @@
             transition: 0.7s;
             overflow: hidden;
         }
-        .store-buttons:hover {
-            background-color: #3D6999;
+        #bookshop-button {
+            background-color: #39AA6E;
+        }
+        #bookshop-button:hover {
+            background-color: #009245;
+        }
+        #bookshop-link:hover {
+            color: #009245;
+        }
+        #education-button {
+            background-color: #BCAFDD;
+        }
+        #education-button:hover {
+            background-color: #9A87CC;
+        }
+        #education-link:hover {
+            color: #9A87CC;
         }
         figure img {
             margin-top: -16px;
@@ -142,10 +154,13 @@
 
         @media screen and (min-width: 2000px) {
             header {
-                height: 120px;
+                height: 100px;
+            }
+            header img {
+                height: 60px;
             }
             h1 {
-                font-size: 36pt;
+                font-size: 28pt;
                 line-height: 0.8em;
             }
             span {
@@ -212,14 +227,14 @@
     </header>
     <main>
         <div id="button-container">
-            <a href="https://anotherstory.ca/?q=h">
-                <figure class="store-buttons">
+            <a href="https://anotherstory.ca/?q=h" id="bookshop-link">
+                <figure class="store-buttons" id="bookshop-button">
                     <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Bookshop_Logo_White_Outline.svg" alt="another story bookshop logo">
                     <figcaption><h2>Looking for your next read?<br>Shop our retail website.</h2></figcaption>
                 </figure>
             </a>
-            <a href="https://anotherstoryedu.ca">
-                <figure class="store-buttons">
+            <a href="https://anotherstoryedu.ca" id="education-link">
+                <figure class="store-buttons" id="education-button">
                     <img src="https://anotherstory.ca/i/1157949/landing-page/ASB_Education_Logo_White_Text.svg" alt="another story education logo">
                     <figcaption><h2>Buying for a school?<br>Shop our education website.</h2></figcaption>
                 </figure>
